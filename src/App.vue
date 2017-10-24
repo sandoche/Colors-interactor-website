@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <Palette :colors='colors'/>
-    <ColorsSquare :colors='colors' :update-color='updateColor'/>
+    <ColorsSquare :colors='colors'
+      v-for="num in mixes"
+      v-bind:index="num"
+      v-bind:key="index"
+    />
     {{ colors }}
   </div>
 </template>
@@ -25,7 +29,8 @@ export default {
         '#7c300a',
         '#47b329',
         '#f2078b'
-      ]
+      ],
+      mixes: [0, 1, 2, 3, 4]
     }
   },
   methods: {

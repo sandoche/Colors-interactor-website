@@ -27,7 +27,7 @@
 <script>
 export default {
   name: 'ColorsSquare',
-  props: ['colors'],
+  props: ['colors', 'index'],
   data: function () {
     let index = this.index
     let shuffledColors = this.colors.slice()

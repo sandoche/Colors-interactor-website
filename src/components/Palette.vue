@@ -4,7 +4,6 @@
       v-for="(color, index) in colors"
       v-bind:color="color"
       v-bind:index="index"
-      v-bind:update-color="updateColor"
       v-bind:key="index"
     />
   </div>
@@ -18,7 +17,7 @@ export default {
   components: {
     Color
   },
-  props: ['colors', 'updateColor']
+  props: ['colors']
 }
 </script>
 

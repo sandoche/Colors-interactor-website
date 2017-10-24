@@ -15,7 +15,7 @@ export default {
   components: {
     Chrome
   },
-  props: ['color', 'index', 'updateColor'],
+  props: ['color', 'index'],
   data: function () {
     return {
       show: false,
