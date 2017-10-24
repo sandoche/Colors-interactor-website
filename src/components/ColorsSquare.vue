@@ -1,5 +1,5 @@
 <template>
-  <div class="colors-square" v-bind:style="{ backgroundColor: colors[0]  }">
+  <div class="colors-square" v-bind:style="{ backgroundColor: colors[0] }">
     <h1>{{ colors }}</h1>
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .colors-square {
 }
 </style>
