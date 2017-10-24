@@ -1,9 +1,9 @@
 <template>
   <div class="color-container">
-    <div class="color" v-bind:style="{backgroundColor: color}">
+    <div class="color" v-bind:style="{backgroundColor: color}" v-on:click="toggle">
       {{ color }}
     </div>
-    <Chrome v-model="colorPicker" @input="updateValue"/>
+    <Chrome v-if="show" v-model="colorPicker" @input="updateValue"/>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
   props: ['color', 'index', 'updateColor'],
   data: function () {
     return {
+      show: false,
       colorPicker: {
         hex: this.color
       }
@@ -26,6 +27,9 @@ export default {
   methods: {
     updateValue: function (value) {
       this.$parent.$parent.updateColor(value.hex, this.index)
+    },
+    toggle: function () {
+      this.show = !this.show
     }
   }
 }
