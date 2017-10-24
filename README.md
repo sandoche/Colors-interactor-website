@@ -26,6 +26,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - [ ] Implement Palette
 - [ ] Implement Color
 - [ ] Implement Square
+- [ ] Improve style
 - [ ] Add branding
 - [ ] Create and implement the CSS export solution
 - [ ] Add contact widget, and google analytics

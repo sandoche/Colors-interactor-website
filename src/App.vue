@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <Palette :colors='colors'/>
-    <ColorsSquare :colors='colors'/>
+    <ColorsSquare :colors='colors' :update-color='updateColor'/>
+    {{ colors }}
   </div>
 </template>
 
@@ -25,6 +26,14 @@ export default {
         '#47b329',
         '#f2078b'
       ]
+    }
+  },
+  methods: {
+    updateColor: function (color, index) {
+      console.log('hello')
+      // const newColors = Object.assign({}, this.colors)
+      // newColors[index] = color
+      // this.colors = newColors
     }
   }
 }
