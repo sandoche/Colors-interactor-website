@@ -54,7 +54,10 @@ export default {
   text-align: center;
   padding: 10px;
   align-items: flex-start;
+  justify-content: center;
   min-height: 50px;
   font-size: 24px;
+  cursor: pointer;
+  width: 100%;
 }
 </style>
