@@ -42,6 +42,10 @@ export default {
   flex: 1;
   flex-direction: column;
   height: 350px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .color {
