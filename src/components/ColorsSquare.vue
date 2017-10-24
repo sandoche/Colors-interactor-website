@@ -1,6 +1,6 @@
 <template>
   <div class="colors-square" v-bind:style="{ backgroundColor: colors[0] }">
-    <h1>{{ colors }}</h1>
+    <h1>Color square</h1>
   </div>
 </template>
 
