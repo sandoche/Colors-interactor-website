@@ -23,10 +23,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## To do
 - [x] Create 3 components: Palette, Square, Color
 - [x] Implement App
-- [ ] Implement Palette
-- [ ] Implement Color
-- [ ] Implement Square
+- [x] Implement Palette
+- [x] Implement Color
+- [x] Implement Square
 - [ ] Improve style
-- [ ] Add branding
+- [ ] Add branding / Footer
+- [ ] Fix bug palette closing
 - [ ] Create and implement the CSS export solution
 - [ ] Add contact widget, and google analytics
