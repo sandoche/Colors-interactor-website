@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     updateValue: function (value) {
-      this.updateColor(value.hex, this.index)
+      this.$parent.$parent.updateColor(value.hex, this.index)
     }
   }
 }

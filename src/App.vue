@@ -30,10 +30,9 @@ export default {
   },
   methods: {
     updateColor: function (color, index) {
-      console.log('hello')
-      // const newColors = Object.assign({}, this.colors)
-      // newColors[index] = color
-      // this.colors = newColors
+      const newColors = Object.assign({}, this.colors)
+      newColors[index] = color
+      this.colors = newColors
     }
   }
 }
