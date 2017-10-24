@@ -1,11 +1,14 @@
 <template>
-  <div class="palette">
-    <Color
-      v-for="(color, index) in colors"
-      v-bind:color="color"
-      v-bind:index="index"
-      v-bind:key="index"
-    />
+  <div>
+    <h2>Palette</h2>
+    <div class="palette">
+      <Color
+        v-for="(color, index) in colors"
+        v-bind:color="color"
+        v-bind:index="index"
+        v-bind:key="index"
+      />
+    </div>
   </div>
 </template>
 
@@ -27,5 +30,6 @@ export default {
   flex-direction: row;
   justify-items: space-between;
   width: 100%;
+  margin-bottom: 64px;
 }
 </style>

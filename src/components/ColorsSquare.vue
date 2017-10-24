@@ -1,26 +1,30 @@
 <template>
-  <div class="colors-square">
-    <div class="colors-square__row">
-      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[1]]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
+  <div>
+    <h2 v-if="index == 0">Color plates</h2>
+    <div class="colors-square">
+      <div class="colors-square__row">
+        <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[1]]}">
+          <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
+          </div>
+        </div>
+        <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[2]]}">
+          <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
+          </div>
         </div>
       </div>
-      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[2]]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
+      <div class="colors-square__row">
+        <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[3]]}">
+          <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="colors-square__row">
-      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[3]]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
-        </div>
-      </div>
-      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[4]]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
+        <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[4]]}">
+          <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
