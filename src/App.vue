@@ -6,7 +6,6 @@
       v-bind:index="num"
       v-bind:key="index"
     />
-    {{ colors }}
   </div>
 </template>
 

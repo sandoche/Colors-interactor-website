@@ -1,26 +1,25 @@
 <template>
   <div class="colors-square">
     <div class="colors-square__row">
-      <div class="square__parent" v-bind:style="{backgroundColor: shuffledColors[1]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: shuffledColors[0]}">
+      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[1]]}">
+        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
         </div>
       </div>
-      <div class="square__parent" v-bind:style="{backgroundColor: shuffledColors[2]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: shuffledColors[0]}">
+      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[2]]}">
+        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
         </div>
       </div>
     </div>
     <div class="colors-square__row">
-      <div class="square__parent" v-bind:style="{backgroundColor: shuffledColors[3]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: shuffledColors[0]}">
+      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[3]]}">
+        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
         </div>
       </div>
-      <div class="square__parent" v-bind:style="{backgroundColor: shuffledColors[4]}">
-        <div class="square__child"  v-bind:style="{backgroundColor: shuffledColors[0]}">
+      <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[4]]}">
+        <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
         </div>
       </div>
     </div>
-    {{ shuffledColors }}
   </div>
 </template>
 
@@ -30,11 +29,11 @@ export default {
   props: ['colors', 'index'],
   data: function () {
     let index = this.index
-    let shuffledColors = this.colors.slice()
-    shuffledColors.splice(index, 1)
-    shuffledColors = [this.colors[index], ...shuffledColors]
+    let indexes = [0, 1, 2, 3, 4]
+    indexes.splice(index, 1)
+    indexes = [index, ...indexes]
     return {
-      shuffledColors
+      indexes
     }
   }
 }
@@ -46,6 +45,7 @@ export default {
   width: 50vw;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .colors-square__row {
