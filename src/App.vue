@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <ColorsSquare :colors='colors'/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import ColorsSquare from './components/ColorsSquare'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ColorsSquare
+  },
+  data: function () {
+    return {
+      colors: [
+        '#e9a138',
+        '#771cc6',
+        '#7c300a',
+        '#47b329',
+        '#f2078b'
+      ]
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
