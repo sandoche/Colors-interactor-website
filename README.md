@@ -21,9 +21,10 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## To do
-- [ ] Create 3 components: Branding, Palette, Square
-- [ ] Implement App.vue
+- [ ] Create 3 components: Palette, Square
+- [ ] Implement App
 - [ ] Implement Palette
 - [ ] Implement Square
+- [ ] Add branding
 - [ ] Create and implement the CSS export solution
 - [ ] Add contact widget, and google analytics
