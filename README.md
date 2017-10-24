@@ -32,4 +32,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - [ ] Add branding / Footer
 - [ ] Fix bug palette closing
 - [ ] Create and implement the CSS export solution
+- [ ] Make it responsive
 - [ ] Add contact widget, and google analytics

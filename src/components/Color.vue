@@ -1,6 +1,6 @@
 <template>
-  <div class="color-container">
-    <div class="color" v-bind:style="{backgroundColor: color}" v-on:click="toggle">
+  <div class="color-container" v-bind:style="{backgroundColor: color}">
+    <div class="color" v-on:click="toggle">
       {{ color }}
     </div>
     <Chrome v-if="show" v-model="colorPicker" @input="updateValue"/>
@@ -41,6 +41,7 @@ export default {
   display:flex;
   flex: 1;
   flex-direction: column;
+  height: 350px;
 }
 
 .color {
@@ -48,5 +49,8 @@ export default {
   flex: 1;
   text-align: center;
   padding: 10px;
+  align-items: flex-start;
+  min-height: 50px;
+  font-size: 24px;
 }
 </style>
