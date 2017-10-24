@@ -26,9 +26,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - [x] Implement Palette
 - [x] Implement Color
 - [x] Implement Square
+- [x] Improve style
 - [ ] Get a random color
 - [ ] Change color of the text depending to the color
-- [ ] Improve style
 - [ ] Add branding / Footer
 - [ ] Fix bug palette closing
 - [ ] Create and implement the CSS export solution

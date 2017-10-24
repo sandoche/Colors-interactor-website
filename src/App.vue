@@ -12,6 +12,7 @@
 <script>
 import Palette from './components/Palette'
 import ColorsSquare from './components/ColorsSquare'
+import randomColor from 'randomcolor'
 
 export default {
   name: 'app',
@@ -22,13 +23,7 @@ export default {
   data: function () {
     return {
       // Todo: randomize the choice
-      colors: [
-        '#e9a138',
-        '#771cc6',
-        '#7c300a',
-        '#47b329',
-        '#f2078b'
-      ],
+      colors: randomColor({count: 5}),
       mixes: [0, 1, 2, 3, 4]
     }
   },
