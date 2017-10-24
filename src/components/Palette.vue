@@ -31,5 +31,6 @@ export default {
   justify-items: space-between;
   width: 100%;
   margin-bottom: 64px;
+  padding: 0.5vw;
 }
 </style>

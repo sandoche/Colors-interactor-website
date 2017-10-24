@@ -45,12 +45,14 @@ export default {
 
 <style>
 .colors-square {
-  height: 50vw;
-  width: 50vw;
+  height: 39vw;
+  width: 39vw;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin: 0.5vw;
+  float: left;
 }
+
 
 .colors-square__row {
   display: flex;
