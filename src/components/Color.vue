@@ -1,6 +1,6 @@
 <template>
   <div class="color-container" v-bind:style="{backgroundColor: color}">
-    <div class="color" v-on:click="toggle">
+    <div class="color" v-on:click="toggle" v-bind:style="{ color: textColor }">
       {{ color }}
     </div>
     <Chrome v-if="show" v-model="colorPicker" @input="updateValue"/>
@@ -21,13 +21,14 @@ export default {
       show: false,
       colorPicker: {
         hex: this.color
-      }
+      },
+      textColor: '#fff'
     }
   },
   methods: {
     updateValue: function (value) {
+      this.textColor = value.hsl.l > 0.5 ? '#000' : '#fff'
       // Todo: change this using emit
-      console.log(value.hsl.l)
       this.$parent.$parent.updateColor(value.hex, this.index)
     },
     toggle: function () {
