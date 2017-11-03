@@ -30,7 +30,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - [x] Get a random color
 - [x] Change color of the text depending to the color
 - [x] Add branding / Footer
-- [ ] Fix bug palette closing
-- [ ] Create and implement the CSS export solution
-- [ ] Add contact widget, and google analytics, and favicon
+- [x] Add contact widget, and google analytics, and favicon
+- [ ] Add deployement script
 - [ ] Update medium links and put in production
