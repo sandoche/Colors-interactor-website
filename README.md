@@ -29,7 +29,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - [x] Improve style
 - [x] Get a random color
 - [x] Change color of the text depending to the color
-- [ ] Add branding / Footer
+- [x] Add branding / Footer
 - [ ] Fix bug palette closing
 - [ ] Create and implement the CSS export solution
-- [ ] Add contact widget, and google analytics
+- [ ] Add contact widget, and google analytics, and favicon
