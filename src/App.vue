@@ -3,7 +3,7 @@
     <Palette :colors='colors'/>
     <button class='button' v-on:click='updateAllColors'>Get new colors</button>
     <ColorsSquare :colors='colors'
-      v-for="num in mixes"
+      v-for="(num, index) in mixes"
       v-bind:index="num"
       v-bind:key="index"
     />

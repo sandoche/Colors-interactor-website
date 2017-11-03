@@ -27,6 +27,7 @@ export default {
   methods: {
     updateValue: function (value) {
       // Todo: change this using emit
+      console.log(value.hsl.l)
       this.$parent.$parent.updateColor(value.hex, this.index)
     },
     toggle: function () {
