@@ -33,3 +33,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - [ ] Fix bug palette closing
 - [ ] Create and implement the CSS export solution
 - [ ] Add contact widget, and google analytics, and favicon
+- [ ] Update medium links and put in production
