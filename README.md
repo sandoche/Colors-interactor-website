@@ -1,7 +1,8 @@
 # Colors-interactor
 
 > A website to quickly test the interactions between the colors of your palette: http://colors.learn.uno/
-> Read more about this service and how to make the best color palettes: http://learn.uno
+
+Read more about this service and how to make the best color palettes: http://learn.uno
 
 ## Build Setup
 
