@@ -2,7 +2,7 @@
 
 > A website to quickly test the interactions between the colors of your palette: http://colors.learn.uno/
 
-Read more about this service and how to make the best color palettes: http://learn.uno
+Read more about this service and how to make the best color palettes: https://medium.com/learning-lab/how-i-learnt-about-color-theories-and-made-my-best-color-palettes-in-one-month-a461604ca669
 
 ## Build Setup
 
