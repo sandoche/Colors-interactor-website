@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 v-if="index == 0">Color plates</h2>
-    <div class="colors-square">
+    <div class="colors-square" v-bind:style="{filter: 'saturate(' + saturation + ')' }">
       <div class="colors-square__row">
         <div class="square__parent" v-bind:style="{backgroundColor: colors[indexes[1]]}">
           <div class="square__child"  v-bind:style="{backgroundColor: colors[indexes[0]]}">
@@ -30,7 +30,7 @@
 <script>
 export default {
   name: 'ColorsSquare',
-  props: ['colors', 'index'],
+  props: ['colors', 'index', 'saturation'],
   data: function () {
     let index = this.index
     let indexes = [0, 1, 2, 3, 4]
@@ -72,5 +72,9 @@ export default {
 .square__child {
   width: 20%;
   height: 20%;
+}
+
+.desaturate {
+  filter: saturation(0);
 }
 </style>

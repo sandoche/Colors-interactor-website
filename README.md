@@ -1,6 +1,8 @@
-# colors-interactor
+# Colors-interactor
 
-> A website to quickly test the interactions between the colors of your palette
+> A website to quickly test the interactions between the colors of your palette: https://colors.learn.uno/
+
+Read more about this service and how to make the best color palettes: https://medium.com/learning-lab/how-i-learnt-about-color-theories-and-made-my-best-color-palettes-in-one-month-a461604ca669
 
 ## Build Setup
 
@@ -20,16 +22,3 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## To do
-- [x] Create 3 components: Palette, Square, Color
-- [x] Implement App
-- [x] Implement Palette
-- [x] Implement Color
-- [x] Implement Square
-- [x] Improve style
-- [x] Get a random color
-- [x] Change color of the text depending to the color
-- [x] Add branding / Footer
-- [x] Add contact widget, and google analytics, and favicon
-- [ ] Add deployement script
-- [ ] Update medium links and put in production

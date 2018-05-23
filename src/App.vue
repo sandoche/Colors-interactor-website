@@ -6,6 +6,12 @@
       v-for="(num, index) in mixes"
       v-bind:index="num"
       v-bind:key="index"
+      v-bind:saturation="1"
+    />
+    <ColorsSquare :colors='colors'
+      v-bind:index="1"
+      v-bind:key="1"
+      v-bind:saturation="0"
     />
   </div>
 </template>
